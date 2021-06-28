@@ -1,0 +1,22 @@
+{
+  "name": "stats-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "Styling practice component",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbobey/stats-preview-card-component-main.git"
+  },
+  "author": "Victoria Bobey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vbobey/stats-preview-card-component-main/issues"
+  },
+  "homepage": "https://github.com/vbobey/stats-preview-card-component-main#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
