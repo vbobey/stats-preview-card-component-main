@@ -91,15 +91,23 @@ body {
     &__picture-overlay {
         width: 54rem;
         height: 44.6rem;
-        background-color: rgba($color-accent, 0.7511);
-        z-index: 2;
         position: absolute;
         border-radius: 0 0.8rem 0.8rem 0;
+
+        &--light {
+            background-color: rgba($color-accent, 0.75);
+            z-index: 2;
+        }
+
+        &--dark {
+            background-color: rgba($color-background-card, 0.25);
+            z-index: 3;
+        }
     }
 
     &__img {
         display: block;
-        filter: opacity(75%) contrast(150%);
+        filter: contrast(130%) brightness(100%);
         border-radius: 0 0.8rem 0.8rem 0;
     }
 }

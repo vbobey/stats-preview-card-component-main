@@ -67,11 +67,15 @@ body {
   .card__picture-overlay {
     width: 54rem;
     height: 44.6rem;
-    background-color: rgba(170, 92, 219, 0.7511);
-    z-index: 2;
     position: absolute;
     border-radius: 0 0.8rem 0.8rem 0; }
+    .card__picture-overlay--light {
+      background-color: rgba(170, 92, 219, 0.75);
+      z-index: 2; }
+    .card__picture-overlay--dark {
+      background-color: rgba(27, 25, 56, 0.25);
+      z-index: 3; }
   .card__img {
     display: block;
-    filter: opacity(75%) contrast(150%);
+    filter: contrast(130%) brightness(100%);
     border-radius: 0 0.8rem 0.8rem 0; }
