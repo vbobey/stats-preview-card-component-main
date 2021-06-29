@@ -14,39 +14,14 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.75);
   font-size: 1.5rem;
   line-height: 2.5rem;
+  color: rgba(255, 255, 255, 0.75);
   background-color: #090b1a;
+  height: 100vh;
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-}
-
-.heading-1 {
-  font-size: 3.6rem;
-  font-weight: 700;
-  color: white;
-  line-height: 4.4rem;
-}
-.heading-1__highlight {
-  color: #aa5cdb;
-}
-
-.heading-2 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: white;
-}
-
-.heading-3 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  font-family: "Lexend Deca", sans-serif;
-  color: rgba(255, 255, 255, 0.6);
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 *,
@@ -65,25 +40,30 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.75);
   font-size: 1.5rem;
   line-height: 2.5rem;
+  color: rgba(255, 255, 255, 0.75);
   background-color: #090b1a;
+  height: 100vh;
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .heading-1 {
   font-size: 3.6rem;
   font-weight: 700;
-  color: white;
   line-height: 4.4rem;
+  color: white;
 }
-
 .heading-1__highlight {
   color: #aa5cdb;
+}
+@media only screen and (max-width: 75em) {
+  .heading-1 {
+    font-size: 2.7rem;
+    line-height: 3.6rem;
+  }
 }
 
 .heading-2 {
@@ -98,7 +78,33 @@ body {
   font-family: "Lexend Deca", sans-serif;
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #090b1a;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -107,16 +113,29 @@ body {
   background-color: #1b1938;
   border-radius: 0.8rem;
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(56rem, 1fr));
   align-items: center;
+}
+@media only screen and (max-width: 75em) {
+  .card {
+    max-width: 90vw;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .card__content {
   padding: 0 7rem;
+  background-color: #1b1938;
+  grid-row: 1/-1;
+  grid-column: 1/span 1;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   row-gap: 4rem;
-  grid-row: 1/-1;
-  grid-column: 1/span 1;
+}
+@media only screen and (max-width: 75em) {
+  .card__content {
+    padding: 4rem;
+    row-gap: 3rem;
+  }
 }
 .card__stats {
   display: flex;
@@ -126,11 +145,23 @@ body {
 .card__picture {
   grid-row: 1/-1;
   grid-column: 2/span 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.card__picture img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 0 0.8rem 0.8rem 0;
+  filter: contrast(130%) brightness(100%);
 }
 .card__picture-overlay {
-  width: 54rem;
-  height: 44.6rem;
   position: absolute;
+  width: 100%;
+  height: 100%;
   border-radius: 0 0.8rem 0.8rem 0;
 }
 .card__picture-overlay--light {
@@ -140,11 +171,6 @@ body {
 .card__picture-overlay--dark {
   background-color: rgba(27, 25, 56, 0.25);
   z-index: 3;
-}
-.card__img {
-  display: block;
-  filter: contrast(130%) brightness(100%);
-  border-radius: 0 0.8rem 0.8rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,32 @@
+@use "base";
+
+.heading-1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.4rem;
+    color: base.$color-text-main;
+
+    &__highlight {
+        color: base.$color-accent;
+    }
+
+    @media only screen and (max-width: base.$bp-large) {
+        font-size: 2.7rem;
+        line-height: 3.6rem;
+    }
+}
+
+.heading-2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: base.$color-text-main;
+}
+
+.heading-3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    color: base.$color-text-headings;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}

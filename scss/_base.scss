@@ -1,10 +1,12 @@
 $color-background-main: hsl(233, 47%, 7%);
 $color-background-card: hsl(244, 38%, 16%);
 $color-accent: hsl(277, 64%, 61%);
+
 $color-text-main: hsl(0, 0%, 100%);
 $color-text-paragraph: hsla(0, 0%, 100%, 0.75);
 $color-text-headings: hsla(0, 0%, 100%, 0.6);
 
+$bp-large: 75em;
 
 *,
 *::after,
@@ -22,39 +24,13 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    color: $color-text-paragraph;
     font-size: 1.5rem;
     line-height: 2.5rem;
+    color: $color-text-paragraph;
     background-color: $color-background-main;
+    height: 100vh;
 
     display: grid;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.heading-1 {
-    font-size: 3.6rem;
-    font-weight: 700;
-    color: $color-text-main;
-    line-height: 4.4rem;
-
-    &__highlight {
-        color: $color-accent;
-    }
-}
-
-.heading-2 {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: $color-text-main;
-}
-
-.heading-3 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    font-family: 'Lexend Deca', sans-serif;
-    color: $color-text-headings;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
