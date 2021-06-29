@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-    <title>Frontend Mentor &mdash; Stats preview card component</title>
+    <title>Stats Preview Card</title>
 </head>
 
 <body>
     <main class="card">
-        <section class="card__content">
+        <div class="card__content">
             <h1 class="heading-1">Get <span class="heading-1__highlight">insights</span> that help your business grow.</h1>
             <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
             <div class="card__stats">
@@ -33,17 +33,14 @@
                     <h3 class="heading-3">queries</h3>
                 </div>
             </div>
-        </section>
-        <section class="card__picture">
+        </div>
+        <div class="card__picture">
+            <div class="card__picture-overlay"></div>
             <figure>
                 <img src="img/image-header-desktop.jpg" alt="Office interior" class="card__img">
             </figure>
-        </section>
+        </div>
     </main>
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Victoria Bobey</a>.
-    </div>
 </body>
 
 </html>
