@@ -4,7 +4,9 @@
   "description": "Styling practice component",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "watch:sass": "sass -w scss/main.scss css/main.css",
+    "dev:server": "live-server --browser=firefox",
+    "start": "npm-run-all --parallel dev:server watch:sass"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/vbobey/stats-preview-card-component-main#readme",
   "dependencies": {
-    "node-sass": "^6.0.1"
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.35.1"
   }
 }

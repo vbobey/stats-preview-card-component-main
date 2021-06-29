@@ -1,0 +1,55 @@
+@use "base";
+
+.card {
+    max-width: 110rem;
+    max-height: 45rem;
+    background-color: base.$color-background-card;
+    border-radius: 0.8rem;
+
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+    &__content {
+        padding: 0 7rem;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 4rem;
+        grid-row: 1 / -1;
+        grid-column: 1 / span 1;
+    }
+
+    &__stats {
+        display: flex;
+        justify-content: space-between;
+        align-self: end;
+    }
+
+    &__picture {
+        grid-row: 1 / -1;
+        grid-column: 2 / span 1;
+    }
+
+    &__picture-overlay {
+        width: 54rem;
+        height: 44.6rem;
+        position: absolute;
+        border-radius: 0 0.8rem 0.8rem 0;
+
+        &--light {
+            background-color: rgba(base.$color-accent, 0.75);
+            z-index: 2;
+        }
+
+        &--dark {
+            background-color: rgba(base.$color-background-card, 0.25);
+            z-index: 3;
+        }
+    }
+
+    &__img {
+        display: block;
+        filter: contrast(130%) brightness(100%);
+        border-radius: 0 0.8rem 0.8rem 0;
+    }
+}
