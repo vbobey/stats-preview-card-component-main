@@ -6,7 +6,10 @@ $color-text-main: hsl(0, 0%, 100%);
 $color-text-paragraph: hsla(0, 0%, 100%, 0.75);
 $color-text-headings: hsla(0, 0%, 100%, 0.6);
 
-$bp-large: 75em;
+$bp-large: 75em;        // 1200px
+$bp-medium: 60em;       // 960px
+$bp-small:  55em;       // 880px
+$bp-smallest:  45em;    // 720px
 
 *,
 *::after,
@@ -24,9 +27,6 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    color: $color-text-paragraph;
     background-color: $color-background-main;
     height: 100vh;
 
