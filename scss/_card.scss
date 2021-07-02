@@ -15,6 +15,18 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    @media only screen and (max-width: base.$bp-m) and (orientation: portrait) {
+        max-width: 33.75rem;
+        max-height: 85vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @media only screen and (max-width: base.$bp-xs) and (orientation: portrait) {
+        max-width: 90vw;
+        max-height: 90vh;
+    }
+
     &__content {
         padding: 0 7rem;
         background-color: base.$color-background-card;
@@ -36,8 +48,16 @@
             row-gap: 1rem;
         }
 
-        @media only screen and (max-width: base.$bp-m) {
+        @media only screen and (max-width: base.$bp-m) and (orientation: landscape) {
             padding: 0 2.5rem;
+        }
+
+        @media only screen and (max-width: base.$bp-m) and (orientation: portrait) {
+            height: 100%;
+            grid-row: 2 / span 2;
+            text-align: center;
+    
+            grid-template-rows: repeat(4, 1fr);
         }
 
         @media only screen and (max-width: base.$bp-s) {
@@ -45,13 +65,37 @@
         }
     }
 
+    &__heading {
+        @media only screen and (max-width: base.$bp-m) and (orientation: portrait) {
+            grid-row: 1 / span 1;
+        }
+    }
+
+    &__description {
+        @media only screen and (max-width: base.$bp-m) and (orientation: portrait) {
+            grid-row: 2 / span 1;
+        }
+    }
+
     &__stats {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
         align-self: end;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
 
         @media only screen and (max-width: base.$bp-m) {
             align-self: inherit;
+            column-gap: 1rem;
+        }
+
+        @media only screen and (max-width: base.$bp-m) and (orientation: portrait) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        @media only screen and (max-width: base.$bp-m) and (orientation: portrait) {
+            height: 100%;
+            grid-row: 3 / span 2;
         }
     }
 
@@ -64,6 +108,11 @@
         display: flex;
         position: relative;
 
+        @media only screen and (max-width: base.$bp-m) and (orientation: portrait) {
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+        }
+
         img {
             width: 100%;
             height: 100%;
@@ -71,6 +120,10 @@
             object-fit: cover;
             border-radius: 0 0.8rem 0.8rem 0;
             filter: contrast(130%) brightness(100%);
+
+            @media only screen and (max-width: base.$bp-m) and (orientation: portrait) {
+                border-radius: 0.8rem 0.8rem 0 0;
+            }
         }
     }
 
@@ -79,6 +132,10 @@
         width: 100%;
         height: 100%;
         border-radius: 0 0.8rem 0.8rem 0;
+
+        @media only screen and (max-width: base.$bp-m) and (orientation: portrait) {
+            border-radius: 0.8rem 0.8rem 0 0;
+        }
 
         &--light {
             background-color: rgba(base.$color-accent, 0.75);
