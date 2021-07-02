@@ -6,10 +6,12 @@ $color-text-main: hsl(0, 0%, 100%);
 $color-text-paragraph: hsla(0, 0%, 100%, 0.75);
 $color-text-headings: hsla(0, 0%, 100%, 0.6);
 
-$bp-large: 75em;        // 1200px
-$bp-medium: 60em;       // 960px
-$bp-small:  55em;       // 880px
-$bp-smallest:  45em;    // 720px
+
+$bp-xl: 75em;       // 1200px
+$bp-l: 60em;        // 960px
+$bp-m:  55em;       // 880px
+$bp-s:  45em;       // 720px
+$bp-xs:  40em;      // 640px
 
 *,
 *::after,

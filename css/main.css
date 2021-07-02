@@ -77,6 +77,12 @@ body {
     line-height: 2.6rem;
   }
 }
+@media only screen and (max-width: 40em) {
+  .heading-1 {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+}
 
 .heading-2 {
   font-size: 2.4rem;
@@ -103,6 +109,11 @@ body {
     font-size: 1.5rem;
   }
 }
+@media only screen and (max-width: 40em) {
+  .heading-2 {
+    font-size: 1.4rem;
+  }
+}
 
 .heading-3 {
   font-size: 1.2rem;
@@ -123,21 +134,33 @@ body {
     font-size: 1rem;
   }
 }
+@media only screen and (max-width: 40em) {
+  .heading-3 {
+    font-size: 0.8rem;
+  }
+}
 
 p {
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: rgba(255, 255, 255, 0.75);
 }
-@media only screen and (max-width: 55em) {
+@media only screen and (max-width: 60em) {
   p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 2rem;
   }
 }
 @media only screen and (max-width: 45em) {
   p {
-    font-size: 1.3rem;
+    font-size: 1.2em;
+    line-height: 1.8rem;
+  }
+}
+@media only screen and (max-width: 45em) {
+  p {
+    font-size: 1.1em;
+    line-height: 1.8rem;
   }
 }
 

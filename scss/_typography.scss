@@ -10,24 +10,29 @@
         color: base.$color-accent;
     }
 
-    @media only screen and (max-width: base.$bp-large) {
+    @media only screen and (max-width: base.$bp-xl) {
         font-size: 2.6rem;
         line-height: 3.6rem;
     }
 
-    @media only screen and (max-width: base.$bp-medium) {
+    @media only screen and (max-width: base.$bp-l) {
         font-size: 2.4rem;
         line-height: 3.2rem;
     }
 
-    @media only screen and (max-width: base.$bp-small) {
+    @media only screen and (max-width: base.$bp-m) {
         font-size: 2rem;
         line-height: 3rem;
     }
 
-    @media only screen and (max-width: base.$bp-smallest) {
+    @media only screen and (max-width: base.$bp-s) {
         font-size: 1.8rem;
         line-height: 2.6rem;
+    }
+
+    @media only screen and (max-width: base.$bp-xs) {
+        font-size: 1.7rem;
+        line-height: 2.2rem;
     }
 }
 
@@ -36,20 +41,24 @@
     font-weight: 700;
     color: base.$color-text-main;
 
-    @media only screen and (max-width: base.$bp-large) {
+    @media only screen and (max-width: base.$bp-xl) {
         font-size: 2.2rem;
     }
 
-    @media only screen and (max-width: base.$bp-medium) {
+    @media only screen and (max-width: base.$bp-l) {
         font-size: 2rem;
     }
 
-    @media only screen and (max-width: base.$bp-small) {
+    @media only screen and (max-width: base.$bp-m) {
         font-size: 1.7rem;
     }
 
-    @media only screen and (max-width: base.$bp-smallest) {
+    @media only screen and (max-width: base.$bp-s) {
         font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: base.$bp-xs) {
+        font-size: 1.4rem;
     }
 }
 
@@ -61,13 +70,17 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 
-    @media only screen and (max-width: base.$bp-small) {
+    @media only screen and (max-width: base.$bp-m) {
         font-size: 1.1rem;
         line-height: 1.6rem;
     }
 
-    @media only screen and (max-width: base.$bp-smallest) {
+    @media only screen and (max-width: base.$bp-s) {
         font-size: 1rem;
+    }
+
+    @media only screen and (max-width: base.$bp-xs) {
+        font-size: 0.8rem;
     }
 }
 
@@ -76,12 +89,18 @@ p {
     line-height: 2.5rem;
     color: base.$color-text-paragraph;
 
-    @media only screen and (max-width: base.$bp-small) {
-        font-size: 1.4rem;
+    @media only screen and (max-width: base.$bp-l) {
+        font-size: 1.3rem;
         line-height: 2rem;
     }
 
-    @media only screen and (max-width: base.$bp-smallest) {
-        font-size: 1.3rem;
+    @media only screen and (max-width: base.$bp-s) {
+        font-size: 1.2em;
+        line-height: 1.8rem;
+    }
+
+    @media only screen and (max-width: base.$bp-s) {
+        font-size: 1.1em;
+        line-height: 1.8rem;
     }
 }

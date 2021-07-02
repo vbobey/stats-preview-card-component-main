@@ -10,7 +10,7 @@
     grid-template-columns: repeat(auto-fit, minmax(56rem, 1fr));
     align-items: center;
 
-    @media only screen and (max-width: base.$bp-large) {
+    @media only screen and (max-width: base.$bp-xl) {
         max-width: 90vw;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -26,21 +26,21 @@
         row-gap: 4rem;
         align-items: center;
 
-        @media only screen and (max-width: base.$bp-large) {
+        @media only screen and (max-width: base.$bp-xl) {
             padding: 0 6rem;
             row-gap: 3rem;
         }
 
-        @media only screen and (max-width: base.$bp-medium) {
+        @media only screen and (max-width: base.$bp-l) {
             padding: 0 4rem;
             row-gap: 1rem;
         }
 
-        @media only screen and (max-width: base.$bp-small) {
+        @media only screen and (max-width: base.$bp-m) {
             padding: 0 2.5rem;
         }
 
-        @media only screen and (max-width: base.$bp-smallest) {
+        @media only screen and (max-width: base.$bp-s) {
             padding: 0 1.5rem;
         }
     }
@@ -50,7 +50,7 @@
         justify-content: space-between;
         align-self: end;
 
-        @media only screen and (max-width: base.$bp-small) {
+        @media only screen and (max-width: base.$bp-m) {
             align-self: inherit;
         }
     }
