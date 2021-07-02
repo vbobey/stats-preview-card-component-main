@@ -65,9 +65,15 @@ body {
     line-height: 3.2rem;
   }
 }
-@media only screen and (max-width: 55em) {
+@media only screen and (max-width: 55em) and (orientation: landscape) {
   .heading-1 {
     font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+@media only screen and (max-width: 55em) and (orientation: portrait) {
+  .heading-1 {
+    font-size: 2.4rem;
     line-height: 3rem;
   }
 }
@@ -218,7 +224,6 @@ body {
 }
 .card__content {
   padding: 0 7rem;
-  background-color: #1b1938;
   grid-row: 1/-1;
   grid-column: 1/span 1;
   display: grid;
@@ -264,6 +269,7 @@ body {
 @media only screen and (max-width: 55em) and (orientation: portrait) {
   .card__description {
     grid-row: 2/span 1;
+    align-self: start;
   }
 }
 .card__stats {
@@ -302,6 +308,11 @@ body {
   .card__picture {
     grid-row: 1/span 1;
     grid-column: 1/span 1;
+  }
+}
+@media only screen and (max-width: 45em) and (orientation: portrait) {
+  .card__picture {
+    max-height: 35vh;
   }
 }
 .card__picture img {
