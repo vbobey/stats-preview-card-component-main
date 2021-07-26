@@ -10,7 +10,6 @@ This is my solution to the [stats preview card component challenge](https://www.
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -46,7 +45,7 @@ Users should be able to:
 
 ### Continued development
 
-If I continued developing this solution, I would fine-tune the styling to look even better at various resolutions.
+If I continued developing this solution, I would resolve an issue with responsiveness that I noticed. When going from desktop -> mobile -> desktop, the second desktop layout can be different than how it originally looked. I would like to spend more time investigating what causes this and determine how to avoid it in the future.
 
 ## Author
 Victoria Bobey
