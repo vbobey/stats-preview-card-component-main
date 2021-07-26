@@ -11,11 +11,7 @@ This is my solution to the [stats preview card component challenge](https://www.
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
