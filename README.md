@@ -50,5 +50,5 @@ Victoria Bobey
 - Frontend Mentor - [@vbobey](https://www.frontendmentor.io/profile/vbobey)
 
 ## Questions
-Suggestions on simplying or enhancing the usage of CSS grid?
-Suggestions on improving responsiveness?
+- Suggestions on simplying or enhancing the usage of CSS grid?
+- Suggestions on improving responsiveness?
